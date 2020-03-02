@@ -5,19 +5,20 @@
   
 
   
-  <title>keytool 工具的相关参数描述 | TsubasaYeung&#39;s Blog</title>
+  <title>vim 命令整理 | TsubasaYeung&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="中英文对比密钥口令: keypass&#x2F;secret密钥库口令: storepass&#x2F;password    代码示例1keytool -genkeypair -alias &lt;alias&gt; -keyalg RSA -dname &quot;CN&#x3D;Web Server,OU&#x3D;Unit,O&#x3D;Organization,L&#x3D;City,S&#x3D;State,C&#x3D;US&quot; -keypass &lt;keypass&amp;g">
+  <meta name="description" content="整理日常自己比较常用到的命令   命令 功能    &#x2F; 搜索文本，进入”搜索模式”   n “搜索模式”下，前往下一个匹配项   N “搜索模式”下，前往上一个匹配项   dd 删除流标所在的一整行    原文链接: https:&#x2F;&#x2F;yzptsubasa.github.io&#x2F;2020&#x2F;03&#x2F;01&#x2F;vim-命令整理&#x2F;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="keytool 工具的相关参数描述">
-<meta property="og:url" content="https://yzptsubasa.github.io/2020/02/29/keytool%20%E5%B7%A5%E5%85%B7%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B0%E6%8F%8F%E8%BF%B0/index.html">
+<meta property="og:title" content="vim 命令整理">
+<meta property="og:url" content="https://yzptsubasa.github.io/2020/03/01/vim-%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/index.html">
 <meta property="og:site_name" content="TsubasaYeung&#39;s Blog">
-<meta property="og:description" content="中英文对比密钥口令: keypass&#x2F;secret密钥库口令: storepass&#x2F;password    代码示例1keytool -genkeypair -alias &lt;alias&gt; -keyalg RSA -dname &quot;CN&#x3D;Web Server,OU&#x3D;Unit,O&#x3D;Organization,L&#x3D;City,S&#x3D;State,C&#x3D;US&quot; -keypass &lt;keypass&amp;g">
+<meta property="og:description" content="整理日常自己比较常用到的命令   命令 功能    &#x2F; 搜索文本，进入”搜索模式”   n “搜索模式”下，前往下一个匹配项   N “搜索模式”下，前往上一个匹配项   dd 删除流标所在的一整行    原文链接: https:&#x2F;&#x2F;yzptsubasa.github.io&#x2F;2020&#x2F;03&#x2F;01&#x2F;vim-命令整理&#x2F;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-29T12:52:37.000Z">
-<meta property="article:modified_time" content="2020-02-29T15:44:40.258Z">
+<meta property="article:published_time" content="2020-03-01T09:20:09.000Z">
+<meta property="article:modified_time" content="2020-03-01T09:52:13.180Z">
 <meta property="article:author" content="yzpTsubasa">
-<meta property="article:tag" content="keytool">
+<meta property="article:tag" content="vim">
+<meta property="article:tag" content="vi">
 <meta name="twitter:card" content="summary">
   
   
@@ -63,14 +64,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-keytool 工具的相关参数描述" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-vim-命令整理" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/02/29/keytool%20%E5%B7%A5%E5%85%B7%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B0%E6%8F%8F%E8%BF%B0/" class="article-date">
-  <time datetime="2020-02-29T12:52:37.000Z" itemprop="datePublished">2020-02-29</time>
+    <a href="/2020/03/01/vim-%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/" class="article-date">
+  <time datetime="2020-03-01T09:20:09.000Z" itemprop="datePublished">2020-03-01</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%AE%89%E5%85%A8/">安全</a>
+    <a class="article-category-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a>
   </div>
 
   </div>
@@ -81,7 +82,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      keytool 工具的相关参数描述
+      vim 命令整理
     </h1>
   
 
@@ -89,23 +90,40 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h6 id="中英文对比"><a href="#中英文对比" class="headerlink" title="中英文对比"></a>中英文对比</h6><p>密钥口令: keypass/secret<br>密钥库口令: storepass/password  </p>
+        <h1 id="整理日常自己比较常用到的命令"><a href="#整理日常自己比较常用到的命令" class="headerlink" title="整理日常自己比较常用到的命令"></a>整理日常自己比较常用到的命令</h1><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><kbd style="border:1px solid gray;font-size:1.2em;box-shadow:1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin:2px 3px;padding:1px 5px;">/</kbd></td>
+<td align="center">搜索文本，进入”搜索模式”</td>
+</tr>
+<tr>
+<td align="center"><kbd style="border:1px solid gray;font-size:1.2em;box-shadow:1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin:2px 3px;padding:1px 5px;">n</kbd></td>
+<td align="center">“搜索模式”下，前往下一个匹配项</td>
+</tr>
+<tr>
+<td align="center"><kbd style="border:1px solid gray;font-size:1.2em;box-shadow:1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin:2px 3px;padding:1px 5px;">N</kbd></td>
+<td align="center">“搜索模式”下，前往上一个匹配项</td>
+</tr>
+<tr>
+<td align="center"><kbd style="border:1px solid gray;font-size:1.2em;box-shadow:1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin:2px 3px;padding:1px 5px;">d</kbd><kbd style="border:1px solid gray;font-size:1.2em;box-shadow:1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin:2px 3px;padding:1px 5px;">d</kbd></td>
+<td align="center">删除流标所在的一整行</td>
+</tr>
+</tbody></table>
 <hr>
-<h6 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keytool -genkeypair -<span class="built_in">alias</span> &lt;<span class="built_in">alias</span>&gt; -keyalg RSA -dname <span class="string">"CN=Web Server,OU=Unit,O=Organization,L=City,S=State,C=US"</span> -keypass &lt;keypass&gt; -keystore &lt;output&gt; -storepass &lt;storepass&gt;</span><br></pre></td></tr></table></figure>
-
-<!-- ![img](/images/1.gif)
-![img](/images/2.jpg) -->
-
-<hr>
-<p>原文链接: [<a href="https://yzptsubasa.github.io/2020/02/29/keytool">https://yzptsubasa.github.io/2020/02/29/keytool</a> 工具的相关参数描述/](<a href="https://yzptsubasa.github.io/2020/02/29/keytool">https://yzptsubasa.github.io/2020/02/29/keytool</a> 工具的相关参数描述/) </p>
+<p>原文链接: <a href="https://yzptsubasa.github.io/2020/03/01/vim-命令整理/">https://yzptsubasa.github.io/2020/03/01/vim-命令整理/</a> </p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://yzptsubasa.github.io/2020/02/29/keytool%20%E5%B7%A5%E5%85%B7%E7%9A%84%E7%9B%B8%E5%85%B3%E5%8F%82%E6%95%B0%E6%8F%8F%E8%BF%B0/" data-id="ck78uqkja0000qbzhfhqi99y0" class="article-share-link">Share</a>
+      <a data-url="https://yzptsubasa.github.io/2020/03/01/vim-%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/" data-id="ck78uqkjl0004qbzh4u218rnj" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/keytool/" rel="tag">keytool</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vi/" rel="tag">vi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/" rel="tag">vim</a></li></ul>
 
     </footer>
   </div>
@@ -113,19 +131,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/02/29/%E5%B7%A8%E5%A4%A7%E7%9A%84%20VS%20Code%20%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          巨大的 VS Code 日志文件
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/29/curl-%E5%91%BD%E4%BB%A4%E8%AF%B7%E6%B1%82%E6%88%90%E5%8A%9F%EF%BC%8C%E4%BD%86%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%9C%E6%B2%A1%E6%9C%89%E6%89%93%E5%8D%B0%E5%9C%A8%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B8%8A/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/02/29/%E5%8E%BB%E9%99%A4Visual-Studio%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">curl 命令请求成功，但数据结果没有打印在控制台上</div>
+      <div class="article-nav-title">去除Visual Studio右键菜单</div>
     </a>
   
 </nav>
